@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}  
+
+		<section id="portfolio">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="section-title">
+						<p>A partir des données open source du site <br>www.data.gouv.fr</br>, </p>
+					</div>
+				</div>
+			</div>
+			<div class="row row-0-gutter">
+				<!-- start portfolio item -->
+				<div class="col-md-6 col-0-gutter">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<a href="/prenoms">
+								<img src={% static "images/demo/prenoms.PNG" %} alt="img02" class="img-responsive" />
+								<figcaption>
+									<h2>Natalité</h2>
+								</figcaption>
+							</a>
+						</figure>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+				<!-- start portfolio item -->
+				<div class="col-md-6 col-0-gutter">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src={% static "images/demo/symbole_sexe.jpg" %} alt="img02" class="img-responsive" />
+							<figcaption>
+								<h2>Egalité H/F</h2>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+			</div>
+			<div class="row row-0-gutter">
+				<!-- start portfolio item -->
+				<div class="col-md-6 col-0-gutter">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src={% static "images/demo/taille-medicaments.jpg" %} alt="img02" class="img-responsive" />
+							<figcaption>
+								<h2>Santé</h2>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+				<!-- start portfolio item -->
+				<div class="col-md-6 col-0-gutter">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src={% static "images/demo/debat.jpg" %} alt="img02" class="img-responsive" />
+							<figcaption>
+								<h2>Débat</h2>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+			</div>
+			</div><!-- container -->
+		</section>
+
+{% endblock content %}
