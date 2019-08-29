@@ -14,11 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.conf.urls import url
 from django.urls import include, path
 from django.views.generic.base import RedirectView
+from rest_framework import permissions
+from rest_framework_swagger.views import get_swagger_view
+
+schema_view = get_swagger_view(title='Pastebin API')
 
 urlpatterns = [
+    path('api/',include('api.urls')),
     path('prenoms/', include('prenoms.urls')),
     path('home/', include('home.urls')),
+    url(r'^swagger/$', schema_view),
     path('', RedirectView.as_view(url='/home/')),
 ]
